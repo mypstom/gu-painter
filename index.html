@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.png" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./color-picker-master/color-picker.min.css">
+    <meta property="og:title" content="GU Painter"></meta>
+    <meta property="og:type" content="painter"></meta>
+    <meta property="og:url" content="https://jienhua.com/guPainter/"></meta>
+    <meta property="og:image" content="https://jienhua.com/guPainter/cover.png"></meta>
+    <title>Gu Painter</title>
+</head>
+
+<body>
+    <div class="cursorImg">
+        <img src="./image/pen.png">
+        <div class="dot">。</div>
+    </div>
+
+    <div class="main-tools">
+        <div class="save">
+            <img src="./image/save.png" alt="" srcset="">
+        </div>
+        <div class="upload">
+            <input class="uploadInput" type='file' multiple/>
+            <img src="./image/upload.png" alt="" srcset="">
+        </div>
+        <div class="undo">
+            <img src="./image/undo.png" alt="" srcset="">
+        </div>
+        <div class="redo">
+            <img src="./image/redo.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="toolBox">
+        <div class="pen active">
+            <img src="./image/pen.png" alt="" srcset="">
+        </div>
+        <div class="brush">
+            <img src="./image/brush.png" alt="" srcset="">
+        </div>
+        <div class="writingPen">
+            <img src="./image/writingPen.png" alt="" srcset="">
+        </div>
+        <div class="star">
+            <img src="./image/star.png" alt="" srcset="">
+        </div>
+        <div class="eraser">
+            <img src="./image/eraser.png" alt="" srcset="">
+        </div>
+        <div class="circle">
+            <img src="./image/circle.png" alt="" srcset="">
+        </div>
+        <div class="rect">
+            <img src="./image/rect.png" alt="" srcset="">
+        </div>
+        <div class="tri">
+            <img src="./image/tri.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="stylePanel">
+        <p>點擊更換顏色</p>
+        <div class="fiil-color"></div>
+        <p>點擊更換線條色彩</p>
+        <div class="show-line">
+            <div class="inner-line"></div>
+        </div>
+        <div id="width-slider"></div>
+        <p>線條種類</p>
+        <div class="lineStyle">
+            <div class="roundLine">圓線</div>
+            <div class="hardLine">方線</div>
+        </div>
+    </div>
+    <div class="canvas-group">
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+</body>
+
+<script src="./jquery-3.4.0.min.js"></script>
+<script src="./jquery-ui/jquery-ui.min.js"></script>
+<script src="./color-picker-master/color-picker.min.js"></script>
+<script src="./main.js"></script>
+
+</html>
